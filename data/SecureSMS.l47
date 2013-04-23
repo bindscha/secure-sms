@@ -1,0 +1,17 @@
+/*
+========================================================================
+ Name        : SecureSMS.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_SecureSMSApplication_3 "SecureSMS"
+#define STR_SecureSMSApplication_4 "SecureSMS"
+#define STR_SecureSMSApplication_1 ""
+#define STR_SecureSMSApplication_2 ""
+#define STR_SecureSMSApplication_13 "Read"
+#define STR_SecureSMSApplication_6 "Settings"
+#define STR_SecureSMSApplication_5 "Send"
+#define STR_SecureSMSApplication_7 "Key"

@@ -1,0 +1,132 @@
+/*
+========================================================================
+ Name        : SendMessageContainer.rssi
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Resource file
+========================================================================
+*/
+#include <Securesms.mbg>
+#include "SendMessageContainer.hrh"
+#include "SendMessageContainer.loc"
+
+RESOURCE AVKON_VIEW r_send_message_container_send_message_container_view
+	{
+	cba = R_AVKON_SOFTKEYS_DONE_BACK;
+	menubar = r_send_message_container_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_send_message_container_options_menu
+	{
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_send_message_container_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_send_message_container_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_send_message_container_title_resource
+	{
+	txt = STR_SendMessageContainerView_3;
+	}
+RESOURCE DIALOG r_send_message_container_password_storing
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = ESendMessageContainerViewPassword_storing;
+			control = AVKON_CONFIRMATION_QUERY
+				{
+				layout = EConfirmationQueryLayout;
+				label = STR_SendMessageContainerView_8;
+				};
+			}
+		};
+	}
+RESOURCE DIALOG r_send_message_container_password
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = ESendMessageContainerViewSecret1;
+			control = AVKON_DATA_QUERY
+				{
+				layout = ECodeLayout;
+				label = STR_SendMessageContainerView_14;
+				control = SECRETED
+					{
+					};
+				};
+			}
+		};
+	}
+RESOURCE TBUF r_send_message_container_password_storing_success
+	{
+	buf = STR_SendMessageContainerView_13;
+	}
+RESOURCE TBUF r_send_message_container_password_storing_failed
+	{
+	buf = STR_SendMessageContainerView_27;
+	}
+RESOURCE TBUF r_send_message_container_password_not_set
+	{
+	buf = STR_SendMessageContainerView_21;
+	}
+RESOURCE TBUF r_send_message_container_message_sent
+	{
+	buf = STR_SendMessageContainerView_29;
+	}
+RESOURCE TBUF r_send_message_container_message_failed
+	{
+	buf = STR_SendMessageContainerView_32;
+	}
+RESOURCE RTXTED r_send_message_container_to
+	{
+	numlines = 0;
+	default_case = EAknEditorTextCase;
+	allowed_case_modes = EAknEditorAllCaseModes;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	default_input_mode = EAknEditorNumericInputMode;
+	allowed_input_modes = EAknEditorNumericInputMode | EAknEditorFullWidthNumericInputMode;
+	}
+RESOURCE TBUF r_send_message_container_to_2
+	{
+	buf = STR_SendMessageContainerView_4;
+	}
+RESOURCE RTXTED r_send_message_container_message
+	{
+	numlines = 0;
+	default_case = EAknEditorTextCase;
+	allowed_case_modes = EAknEditorAllCaseModes;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	default_input_mode = EAknEditorTextInputMode;
+	allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode | EAknEditorSecretAlphaInputMode | EAknEditorKatakanaInputMode | EAknEditorFullWidthTextInputMode | EAknEditorFullWidthNumericInputMode | EAknEditorFullWidthKatakanaInputMode | EAknEditorHiraganaKanjiInputMode | EAknEditorHalfWidthTextInputMode;
+	}
+RESOURCE TBUF r_send_message_container_message_2
+	{
+	buf = STR_SendMessageContainerView_9;
+	}
+RESOURCE LABEL r_send_message_container_label_message
+	{
+	txt = STR_SendMessageContainerView_5;
+	horiz_align = EEikLabelAlignHLeft;
+	}
+RESOURCE LABEL r_send_message_container_label_to
+	{
+	txt = STR_SendMessageContainerView_6;
+	horiz_align = EEikLabelAlignHLeft;
+	}

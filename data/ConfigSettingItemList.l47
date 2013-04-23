@@ -1,0 +1,30 @@
+/*
+========================================================================
+ Name        : ConfigSettingItemList.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_ConfigSettingItemListView_6 "Change"
+#define STR_ConfigSettingItemListView_1 "Settings"
+#define STR_ConfigSettingItemListView_2 ""
+#define STR_ConfigSettingItemListView_3 ""
+#define STR_ConfigSettingItemListView_4 "Secure SMS"
+#define STR_ConfigSettingItemListView_21 "Application password"
+#define STR_ConfigSettingItemListView_82 "On"
+#define STR_ConfigSettingItemListView_83 "On"
+#define STR_ConfigSettingItemListView_84 "Off"
+#define STR_ConfigSettingItemListView_85 "Off"
+#define STR_ConfigSettingItemListView_86 "Contacts passwords"
+#define STR_ConfigSettingItemListView_43 "Yes"
+#define STR_ConfigSettingItemListView_44 "Popup text for On"
+#define STR_ConfigSettingItemListView_45 "No"
+#define STR_ConfigSettingItemListView_46 "Popup text for Off"
+#define STR_ConfigSettingItemListView_47 "Drop invalid GME"
+#define STR_ConfigSettingItemListView_10 "Delete sent messages"
+#define STR_ConfigSettingItemListView_5 "Yes"
+#define STR_ConfigSettingItemListView_7 "Popup text for On"
+#define STR_ConfigSettingItemListView_8 "No"
+#define STR_ConfigSettingItemListView_9 "Popup text for Off"

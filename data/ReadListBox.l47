@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : ReadListBox.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_ReadListBoxView_1 ""
+#define STR_ReadListBoxView_2 ""
+#define STR_ReadListBoxView_3 "Secure SMS"
+#define STR_ReadListBoxView_5 "There are no messages to display"
+#define STR_ReadListBoxView_4 "Open"
+#define STR_ReadListBoxView_7 "Delete"
+#define STR_ReadListBoxView_8 "Are you sure you really want to delete this message"
+#define STR_ReadListBoxView_10 "Mark/Unmark"
+#define STR_ReadListBoxView_12 "item"
+#define STR_ReadListBoxView_11 "item"

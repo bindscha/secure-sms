@@ -1,0 +1,118 @@
+/*
+========================================================================
+ Name        : SecureSMS.rss
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Resource file
+========================================================================
+*/
+NAME SECU
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#include <appinfo.rh>
+#include "SecureSMS.hrh"
+#include "SecureSMS.loc"
+
+RESOURCE RSS_SIGNATURE
+	{
+	}
+RESOURCE TBUF
+	{
+	buf = "SecureSMS";
+	}
+RESOURCE EIK_APP_INFO r_application_securesmsapp_ui
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	status_pane = r_application_status_pane;
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_application_status_pane
+	{panes =
+			{
+			SPANE_PANE
+				{
+				id = EEikStatusPaneUidNavi;
+				type = EAknCtNaviPane;
+				resource = r_application_navi_tabs1_resource;
+				}
+			};
+
+	}
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = STR_SecureSMSApplication_4;
+	caption_and_icon = CAPTION_AND_ICON_INFO
+		{
+		caption = STR_SecureSMSApplication_3;
+		number_of_icons = 0;
+		icon_file = "\\resource\\apps\\SecureSMS_aif.mif";
+		};
+	}
+RESOURCE TBUF r_application_akn_view_reference1
+	{
+	}
+
+
+
+RESOURCE TBUF r_application_akn_view_reference4
+	{buf = STR_SecureSMSApplication_13;
+
+	}
+
+RESOURCE NAVI_DECORATOR r_application_navi_tabs1_resource
+	{
+	type = ENaviDecoratorControlTabGroup;
+	control = TAB_GROUP
+		{
+		tabs =
+			{
+			TAB
+				{
+				id = ESendMessageContainerViewId;
+				txt = STR_SecureSMSApplication_5;
+				},
+			TAB
+				{
+				id = EReadListBoxViewId;
+				txt = STR_SecureSMSApplication_13;
+				},
+			TAB
+				{
+				id = EKeyExchangeContainerViewId;
+				txt = STR_SecureSMSApplication_7;
+				},
+			TAB
+				{
+				id = EConfigSettingItemListViewId;
+				txt = STR_SecureSMSApplication_6;
+				}
+			};
+		};
+	}
+
+RESOURCE TBUF r_application_akn_view_reference3
+	{buf = STR_SecureSMSApplication_6;
+
+	}
+
+RESOURCE TBUF r_application_akn_view_reference5
+	{
+	}
+
+RESOURCE TBUF r_application_akn_view_reference6
+	{buf = STR_SecureSMSApplication_5;
+
+	}
+
+RESOURCE TBUF r_application_akn_view_reference2
+	{buf = STR_SecureSMSApplication_7;
+
+	}
+
+#include "MainListBox.rssi"
+#include "SendMessageContainer.rssi"
+#include "ReadListBox.rssi"
+#include "ConfigSettingItemList.rssi"
+#include "ReadMessageContainer.rssi"
+#include "KeyExchangeContainer.rssi"

@@ -1,0 +1,219 @@
+/*
+========================================================================
+ Name        : KeyExchangeContainer.rssi
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Resource file
+========================================================================
+*/
+#include "KeyExchangeContainer.hrh"
+#include "KeyExchangeContainer.loc"
+
+RESOURCE AVKON_VIEW r_key_exchange_container_key_exchange_container_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar = r_key_exchange_container_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_key_exchange_container_options_menu
+	{
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_key_exchange_container_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_key_exchange_container_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_key_exchange_container_title_resource
+	{
+	txt = STR_KeyExchangeContainerView_3;
+	}
+RESOURCE DIALOG r_key_exchange_container_initiate_query
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EKeyExchangeContainerViewInitiateQuery;
+			control = AVKON_CONFIRMATION_QUERY
+				{
+				layout = EConfirmationQueryLayout;
+				label = STR_KeyExchangeContainerView_4;
+				};
+			}
+		};
+	}
+RESOURCE DIALOG r_key_exchange_container_key_exchange_type
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EKeyExchangeContainerViewKeyExchangeType;
+			control = AVKON_CONFIRMATION_QUERY
+				{
+				layout = EConfirmationQueryLayout;
+				label = STR_KeyExchangeContainerView_8;
+				};
+			}
+		};
+	}
+RESOURCE AVKON_LIST_QUERY r_key_exchange_container_key_exchange_dev_selection
+	{
+	flags = EGeneralQueryFlags;
+	softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		AVKON_LIST_QUERY_DLG_LINE
+			{
+			control = AVKON_LIST_QUERY_CONTROL
+				{
+				listtype = EAknCtSinglePopupMenuListBox;
+				heading = STR_KeyExchangeContainerView_5;
+				listbox = AVKON_LIST_QUERY_LIST
+					{
+					};
+				};
+			}
+		};
+	}
+RESOURCE DIALOG r_key_exchange_container_wait_partner
+	{
+	flags = EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EKeyExchangeContainerViewWaitPartner;
+			control = AVKON_NOTE
+				{
+				layout = EWaitLayout;
+				singular_label = STR_KeyExchangeContainerView_9;
+				animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+RESOURCE TBUF r_key_exchange_container_hosting_key_exchange
+	{
+	buf = STR_KeyExchangeContainerView_12;
+	}
+RESOURCE RTXTED r_key_exchange_container_log
+	{
+	numlines = 0;
+	flags = EEikEdwinNoAutoSelection | EEikEdwinJustAutoCurEnd | EEikEdwinDisplayOnly | EEikEdwinAvkonDisableCursor | EEikEdwinResizable;
+	default_case = EAknEditorTextCase;
+	allowed_case_modes = EAknEditorAllCaseModes;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	default_input_mode = EAknEditorTextInputMode;
+	allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode | EAknEditorSecretAlphaInputMode | EAknEditorKatakanaInputMode | EAknEditorFullWidthTextInputMode | EAknEditorFullWidthNumericInputMode | EAknEditorFullWidthKatakanaInputMode | EAknEditorHiraganaKanjiInputMode | EAknEditorHalfWidthTextInputMode;
+	}
+RESOURCE TBUF r_key_exchange_container_log_2
+	{
+	buf = STR_KeyExchangeContainerView_6;
+	}
+RESOURCE DIALOG r_key_exchange_container_ask_phone_nb
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EKeyExchangeContainerViewEdit1;
+			control = AVKON_DATA_QUERY
+				{
+				layout = EPhoneLayout;
+				label = STR_KeyExchangeContainerView_7;
+				control = EDWIN
+					{
+					maxlength = 255;
+					default_case = EAknEditorTextCase;
+					allowed_case_modes = EAknEditorAllCaseModes;
+					numeric_keymap = EAknEditorStandardNumberModeKeymap;
+					default_input_mode = EAknEditorTextInputMode;
+					allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode | EAknEditorSecretAlphaInputMode | EAknEditorKatakanaInputMode | EAknEditorFullWidthTextInputMode | EAknEditorFullWidthNumericInputMode | EAknEditorFullWidthKatakanaInputMode | EAknEditorHiraganaKanjiInputMode | EAknEditorHalfWidthTextInputMode;
+					};
+				};
+			}
+		};
+	}
+RESOURCE TBUF r_key_exchange_container_edit1
+	{
+	buf = STR_KeyExchangeContainerView_10;
+	}
+RESOURCE AVKON_LIST_QUERY r_key_exchange_container_key_exchange_over
+	{
+	flags = EGeneralQueryFlags;
+	softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		AVKON_LIST_QUERY_DLG_LINE
+			{
+			control = AVKON_LIST_QUERY_CONTROL
+				{
+				listtype = EAknCtSinglePopupMenuListBox;
+				heading = STR_KeyExchangeContainerView_11;
+				listbox = AVKON_LIST_QUERY_LIST
+					{
+					};
+				};
+			}
+		};
+	}
+RESOURCE ARRAY r_key_exchange_container_listbox_item1
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_KeyExchangeContainerView_13;
+			}
+		};
+	}
+RESOURCE ARRAY r_key_exchange_container_listbox_item2
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_KeyExchangeContainerView_14;
+			}
+		};
+	}
+RESOURCE DIALOG r_key_exchange_container_password_query
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EKeyExchangeContainerViewSecret1;
+			control = AVKON_DATA_QUERY
+				{
+				layout = ECodeLayout;
+				label = STR_KeyExchangeContainerView_15;
+				control = SECRETED
+					{
+					};
+				};
+			}
+		};
+	}

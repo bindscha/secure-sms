@@ -1,0 +1,16 @@
+/*
+========================================================================
+ Name        : KeyExchangeContainer.hrh
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Header file for key exchange container controls
+========================================================================
+*/
+enum TKeyExchangeContainerViewControls
+	{
+	EKeyExchangeContainerViewInitiateQuery = 1,
+	EKeyExchangeContainerViewKeyExchangeType,
+	EKeyExchangeContainerViewWaitPartner,
+	EKeyExchangeContainerViewEdit1,
+	EKeyExchangeContainerViewSecret1
+	};

@@ -1,0 +1,24 @@
+/*
+========================================================================
+ Name        : KeyExchangeContainer.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_KeyExchangeContainerView_1 ""
+#define STR_KeyExchangeContainerView_2 ""
+#define STR_KeyExchangeContainerView_3 "Secure SMS"
+#define STR_KeyExchangeContainerView_8 "Do you wish to host the key exchange"
+#define STR_KeyExchangeContainerView_4 "Start key exchange now"
+#define STR_KeyExchangeContainerView_5 "Select a partner for key exchange"
+#define STR_KeyExchangeContainerView_9 "Attempting to locate a key exchange partner..."
+#define STR_KeyExchangeContainerView_12 "You are now hosting the key exchange. Please make sure your partner selects your device when prompted to"
+#define STR_KeyExchangeContainerView_6 ""
+#define STR_KeyExchangeContainerView_10 ""
+#define STR_KeyExchangeContainerView_7 "Enter partner phone number:"
+#define STR_KeyExchangeContainerView_11 "Perform Key Exchange over..."
+#define STR_KeyExchangeContainerView_13 "SMS"
+#define STR_KeyExchangeContainerView_14 "Bluetooth"
+#define STR_KeyExchangeContainerView_15 "Please consult with your partner to decide on a password and enter it:"

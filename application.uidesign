@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviTabs" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">SecureSMSAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">SecureSMS</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CSecureSMSApplication</property>
+    <property id="documentBase">SecureSMS</property>
+    <property id="name">SecureSMSApplication</property>
+    <property id="uid">0xEE96475F</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CSecureSMSDocument</property>
+      <property id="name">SecureSMSDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference1</property>
+        <property id="className">CSecureSMSAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">38</property>
+          <property id="y">10</property>
+        </compoundProperty>
+        <property id="name">SecureSMSAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">176</property>
+          <property id="height">208</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">16</property>
+            <property id="y">1</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">152</property>
+            <property id="height">43</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_SecureSMSApplication_4</property>
+            <compoundProperty id="location">
+              <property id="x">48</property>
+            </compoundProperty>
+            <property id="longCaption" type="i18n">STR_SecureSMSApplication_3</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">104</property>
+              <property id="height">28</property>
+            </compoundProperty>
+          </component>
+          <component id="com.nokia.sdt.series60.NaviTabs">
+            <compoundProperty id="location">
+              <property id="x">54</property>
+              <property id="y">28</property>
+            </compoundProperty>
+            <property id="name">NaviTabs1</property>
+            <compoundProperty id="size">
+              <property id="width">98</property>
+              <property id="height">15</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">184</property>
+          </compoundProperty>
+          <compoundProperty id="info">
+            <property id="leftText" type="i18n">STR_SecureSMSApplication_1</property>
+            <property id="rightText" type="i18n">STR_SecureSMSApplication_2</property>
+          </compoundProperty>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">176</property>
+            <property id="height">24</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">MainListBox.uidesign</property>
+          <property id="baseName">MainListBox</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference1</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">SendMessageContainer.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">SendMessageContainer</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference6</property>
+          <property id="tabText" type="i18n">STR_SecureSMSApplication_5</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">ReadListBox.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">ReadListBox</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference4</property>
+          <property id="tabText" type="i18n">STR_SecureSMSApplication_13</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">KeyExchangeContainer.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">KeyExchangeContainer</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference2</property>
+          <property id="tabText" type="i18n">STR_SecureSMSApplication_7</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">ConfigSettingItemList.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">ConfigSettingItemList</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference3</property>
+          <property id="tabText" type="i18n">STR_SecureSMSApplication_6</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">ReadMessageContainer.uidesign</property>
+          <property id="baseName">ReadMessageContainer</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference5</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_InternationalEnglish">
+      <string id="STR_SecureSMSApplication_1"/>
+      <string id="STR_SecureSMSApplication_2"/>
+      <string id="STR_SecureSMSApplication_3">SecureSMS</string>
+      <string id="STR_SecureSMSApplication_4">SecureSMS</string>
+      <string id="STR_SecureSMSApplication_13">Read</string>
+      <string id="STR_SecureSMSApplication_6">Settings</string>
+      <string id="STR_SecureSMSApplication_5">Send</string>
+      <string id="STR_SecureSMSApplication_7">Key</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="aknViewReference4" rsrcId="tabText">r_application_akn_view_reference4</resourceMapping>
+      <resourceMapping instanceName="aknViewReference2" rsrcId="tabText">r_application_akn_view_reference2</resourceMapping>
+      <resourceMapping instanceName="SecureSMSAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+      <resourceMapping instanceName="aknViewReference6" rsrcId="tabText">r_application_akn_view_reference6</resourceMapping>
+      <resourceMapping instanceName="aknViewReference3" rsrcId="tabText">r_application_akn_view_reference3</resourceMapping>
+      <resourceMapping instanceName="aknViewReference5" rsrcId="tabText">r_application_akn_view_reference5</resourceMapping>
+      <resourceMapping instanceName="SecureSMSAppUi">r_application_securesmsapp_ui</resourceMapping>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="NaviTabs1">r_application_navi_tabs1_resource</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="NaviTabs1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidNavi</enumMapping>
+      <enumMapping instanceName="NaviTabs1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtNaviPane</enumMapping>
+      <enumMapping instanceName="aknViewReference3" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EConfigSettingItemListViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference4" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EReadListBoxViewId</enumMapping>
+      <enumMapping instanceName="NaviTabs1" propertyId="tabWidth">EAknTabWidthWithTwoTabs</enumMapping>
+      <enumMapping instanceName="aknViewReference5" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EReadMessageContainerViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference2" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EKeyExchangeContainerViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference6" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESendMessageContainerViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EMainListBoxViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/securesmsdocument.cpp</file>
+    <file>src/configsettingitemlistview.cpp</file>
+    <file>inc/readmessagecontainerview.h</file>
+    <file>inc/securesmsappui.h</file>
+    <file>src/securesmsapplication.cpp</file>
+    <file>inc/keyexchangecontainerview.h</file>
+    <file>inc/mainlistboxview.h</file>
+    <file>inc/securesmsapplication.h</file>
+    <file>inc/configsettingitemlistview.h</file>
+    <file>src/readmessagecontainerview.cpp</file>
+    <file>inc/sendmessagecontainerview.h</file>
+    <file>src/mainlistboxview.cpp</file>
+    <file>inc/readlistboxview.h</file>
+    <file>src/sendmessagecontainerview.cpp</file>
+    <file>inc/securesmsdocument.h</file>
+    <file>src/securesmsappui.cpp</file>
+    <file>src/keyexchangecontainerview.cpp</file>
+    <file>src/readlistboxview.cpp</file>
+    <file>data/securesms.rss</file>
+    <file>data/mainlistbox.rssi</file>
+    <file>inc/securesms.hrh</file>
+    <file>data/sendmessagecontainer.rssi</file>
+    <file>inc/sendmessagecontainer.hrh</file>
+    <file>data/readlistbox.rssi</file>
+    <file>data/configsettingitemlist.rssi</file>
+    <file>inc/configsettingitemlist.hrh</file>
+    <file>data/readmessagecontainer.rssi</file>
+    <file>data/keyexchangecontainer.rssi</file>
+    <file>inc/keyexchangecontainer.hrh</file>
+    <file>data/securesms.loc</file>
+    <file>data/securesms.l47</file>
+    <file>data/mainlistbox.loc</file>
+    <file>data/mainlistbox.l47</file>
+    <file>data/sendmessagecontainer.loc</file>
+    <file>data/sendmessagecontainer.l47</file>
+    <file>data/readlistbox.loc</file>
+    <file>data/readlistbox.l47</file>
+    <file>data/configsettingitemlist.loc</file>
+    <file>data/configsettingitemlist.l47</file>
+    <file>data/readmessagecontainer.loc</file>
+    <file>data/readmessagecontainer.l47</file>
+    <file>data/keyexchangecontainer.loc</file>
+    <file>data/keyexchangecontainer.l47</file>
+  </generatedFiles>
+</designerData>

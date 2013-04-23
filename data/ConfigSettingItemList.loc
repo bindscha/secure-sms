@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ConfigSettingItemList.loc
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization file
+========================================================================
+*/
+#ifdef LANGUAGE_47
+#include "ConfigSettingItemList.l47"
+#endif

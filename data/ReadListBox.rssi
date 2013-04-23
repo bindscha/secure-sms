@@ -1,0 +1,110 @@
+/*
+========================================================================
+ Name        : ReadListBox.rssi
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Resource file
+========================================================================
+*/
+#include "ReadListBox.hrh"
+#include "ReadListBox.loc"
+
+RESOURCE AVKON_VIEW r_read_list_box_read_list_box_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar = r_read_list_box_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_read_list_box_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_read_list_box_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_read_list_box_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_read_list_box_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_read_list_box_title_resource
+	{
+	txt = STR_ReadListBoxView_3;
+	}
+RESOURCE LISTBOX r_read_list_box_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE TBUF r_read_list_box_no_messages
+	{
+	buf = STR_ReadListBoxView_5;
+	}
+RESOURCE MENU_PANE r_read_list_box_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EReadListBoxViewOpenMenuItemCommand;
+			txt = STR_ReadListBoxView_4;
+			},
+		MENU_ITEM
+			{
+			command = EReadListBoxViewDeleteMenuItemCommand;
+			txt = STR_ReadListBoxView_7;
+			},
+		MENU_ITEM
+			{
+			command = EReadListBoxViewMarkMenuItemCommand;
+			txt = STR_ReadListBoxView_10;
+			}
+		};
+	}
+RESOURCE DIALOG r_read_list_box_conf_delete_message
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EReadListBoxViewConfDeleteMessage;
+			control = AVKON_CONFIRMATION_QUERY
+				{
+				layout = EConfirmationQueryLayout;
+				label = STR_ReadListBoxView_8;
+				};
+			}
+		};
+	}
+RESOURCE ARRAY r_read_list_box_listbox_item1
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_ReadListBoxView_11;
+			}
+		};
+	}
+RESOURCE ARRAY r_read_list_box_listbox_item2
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_ReadListBoxView_12;
+			}
+		};
+	}

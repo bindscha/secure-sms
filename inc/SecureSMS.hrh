@@ -1,0 +1,17 @@
+/*
+========================================================================
+ Name        : SecureSMS.hrh
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Header file for application views
+========================================================================
+*/
+enum TSecureSMSViewUids
+	{
+	ESendMessageContainerViewId = 1,
+	EReadListBoxViewId,
+	EKeyExchangeContainerViewId,
+	EConfigSettingItemListViewId,
+	EReadMessageContainerViewId,
+	EMainListBoxViewId
+	};

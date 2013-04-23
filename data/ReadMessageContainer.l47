@@ -1,0 +1,15 @@
+/*
+========================================================================
+ Name        : ReadMessageContainer.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_ReadMessageContainerView_1 ""
+#define STR_ReadMessageContainerView_2 ""
+#define STR_ReadMessageContainerView_3 "Secure SMS"
+#define STR_ReadMessageContainerView_5 "(no data)"
+#define STR_ReadMessageContainerView_8 "(no data)"
+#define STR_ReadMessageContainerView_9 "(no data)"

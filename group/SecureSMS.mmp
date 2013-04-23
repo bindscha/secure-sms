@@ -1,0 +1,48 @@
+
+TARGET			SecureSMS.exe
+UID			   0x100039CE 0xEE96475F
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+
+SOURCEPATH		..\data
+START RESOURCE	SecureSMS.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	SecureSMS_reg.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib
+LIBRARY			commonengine.lib efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib sendui.lib msgs.lib smcm.lib gsmu.lib mtur.lib hash.lib cryptography.lib cntmodel.lib bluetooth.lib btmanclient.lib sdpagent.lib sdpdatabase.lib btextnotifiers.lib
+
+LANG 				47
+
+START BITMAP SecureSMS.mbm
+	HEADER
+	TARGETPATH \resource\apps
+	SOURCEPATH ..\gfx
+	SOURCE c12,1 list_icon.bmp list_icon_mask.bmp
+	SOURCE c24,1 receive_icon.bmp receive_icon_mask.bmp send_icon.bmp send_icon_mask.bmp ssms_icon.bmp ssms_icon_mask.bmp settings_icon.bmp settings_icon_mask.bmp key_exchange_icon.bmp key_exchange_icon_mask.bmp open_envelope_icon.bmp open_envelope_icon_mask.bmp unopen_envelope_icon.bmp unopen_envelope_icon_mask.bmp
+END
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE MainListBoxView.cpp MainListBox.cpp SecureSMSDocument.cpp SecureSMSAppUi.cpp SecureSMSApplication.cpp ReadListBox.cpp ReadListBoxView.cpp ConfigSettingItemListView.cpp ConfigSettingItemList.cpp GME.cpp SMSSender.cpp SMSHandler.cpp SecurityModule.cpp ConfigSettingItemListSettings.cpp SMSReceiver.cpp ReadMessageContainer.cpp ReadMessageContainerView.cpp SendMessageContainer.cpp SendMessageContainerView.cpp ContactsHandler.cpp
+
+CAPABILITY LocalServices NetworkServices ReadUserData WriteUserData
+
+SOURCEPATH ..\src
+SOURCE KeyExchangeContainer.cpp KeyExchangeContainerView.cpp BluetoothListener.cpp BluetoothConnector.cpp BluetoothDeviceDiscoverer.cpp BluetoothServiceAdvertiser.cpp BluetoothServiceDiscoverer.cpp AbstractEngine.cpp KeyExchangeEngine.cpp BluetoothEngine.cpp SMSEngine.cpp KeyExchangeModule.cpp

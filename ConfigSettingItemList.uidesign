@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknSettingItemList" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SecretEditor" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknBinaryPopupSettingItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.EnumeratedTextPopupBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItemBase" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CConfigSettingItemListView</property>
+    <compoundProperty id="location">
+      <property id="x">38</property>
+      <property id="y">10</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">ConfigSettingItemListView</property>
+    <compoundProperty id="size">
+      <property id="width">176</property>
+      <property id="height">208</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">16</property>
+        <property id="y">1</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">152</property>
+        <property id="height">43</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">48</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_ConfigSettingItemListView_4</property>
+        <compoundProperty id="size">
+          <property id="width">104</property>
+          <property id="height">28</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">184</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_ConfigSettingItemListView_2</property>
+        <property id="rightText" type="i18n">STR_ConfigSettingItemListView_3</property>
+        <property id="rightId">EAknSoftkeyBack</property>
+        <property id="type">R_AVKON_SOFTKEYS_OPTIONS_BACK</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">24</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CAknSettingItemList">
+      <property id="title" type="i18n">STR_ConfigSettingItemListView_1</property>
+      <compoundProperty id="location">
+        <property id="y">44</property>
+      </compoundProperty>
+      <property id="className">CConfigSettingItemList</property>
+      <property id="name">ConfigSettingItemList</property>
+      <property id="exitsApp">false</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">140</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.SecretEditor">
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">0</property>
+        </compoundProperty>
+        <property id="name">application_password</property>
+        <property id="itemTitle" type="i18n">STR_ConfigSettingItemListView_21</property>
+        <compoundProperty id="size">
+          <property id="height">40</property>
+          <property id="width">176</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknBinaryPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_82</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_83</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_84</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_85</property>
+            <property id="value">0</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">40</property>
+        </compoundProperty>
+        <property id="name">contactsPasswords</property>
+        <property id="itemTitle" type="i18n">STR_ConfigSettingItemListView_86</property>
+        <property id="active">1</property>
+        <compoundProperty id="size">
+          <property id="height">40</property>
+          <property id="width">176</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknBinaryPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_5</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_7</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_8</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_9</property>
+            <property id="value">0</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">80</property>
+        </compoundProperty>
+        <property id="name">delSentMessages</property>
+        <property id="itemTitle" type="i18n">STR_ConfigSettingItemListView_10</property>
+        <compoundProperty id="size">
+          <property id="height">40</property>
+          <property id="width">176</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknBinaryPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_43</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_44</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_ConfigSettingItemListView_45</property>
+            <property id="popupText" type="i18n">STR_ConfigSettingItemListView_46</property>
+            <property id="value">0</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">120</property>
+        </compoundProperty>
+        <property id="name">dropInvalidGME</property>
+        <property id="itemTitle" type="i18n">STR_ConfigSettingItemListView_47</property>
+        <compoundProperty id="size">
+          <property id="height">40</property>
+          <property id="width">176</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">2</property>
+        <property id="y">153</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size">
+        <property id="height">31</property>
+        <property id="width">172</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.MenuPane">
+        <compoundProperty id="location"/>
+        <property id="name">menuPane1</property>
+        <compoundProperty id="size">
+          <property id="height">31</property>
+          <property id="width">172</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">2</property>
+          </compoundProperty>
+          <property id="name">menuItem1</property>
+          <property id="text" type="i18n">STR_ConfigSettingItemListView_6</property>
+          <compoundProperty id="size">
+            <property id="width">157</property>
+            <property id="height">22</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleChangeSelectedSettingItemL" handlerSymbol="cpp@src//ConfigSettingItemListView.cpp/function(CConfigSettingItemListView::HandleChangeSelectedSettingItemL(TInt))"/>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_InternationalEnglish">
+      <string id="STR_ConfigSettingItemListView_1">Settings</string>
+      <string id="STR_ConfigSettingItemListView_2"/>
+      <string id="STR_ConfigSettingItemListView_3"/>
+      <string id="STR_ConfigSettingItemListView_4">Secure SMS</string>
+      <string id="STR_ConfigSettingItemListView_6">Change</string>
+      <string id="STR_ConfigSettingItemListView_21">Application password</string>
+      <string id="STR_ConfigSettingItemListView_82">On</string>
+      <string id="STR_ConfigSettingItemListView_83">On</string>
+      <string id="STR_ConfigSettingItemListView_84">Off</string>
+      <string id="STR_ConfigSettingItemListView_85">Off</string>
+      <string id="STR_ConfigSettingItemListView_86">Contacts passwords</string>
+      <string id="STR_ConfigSettingItemListView_5">Yes</string>
+      <string id="STR_ConfigSettingItemListView_7">Popup text for On</string>
+      <string id="STR_ConfigSettingItemListView_8">No</string>
+      <string id="STR_ConfigSettingItemListView_9">Popup text for Off</string>
+      <string id="STR_ConfigSettingItemListView_10">Delete sent messages</string>
+      <string id="STR_ConfigSettingItemListView_43">Yes</string>
+      <string id="STR_ConfigSettingItemListView_44">Popup text for On</string>
+      <string id="STR_ConfigSettingItemListView_45">No</string>
+      <string id="STR_ConfigSettingItemListView_46">Popup text for Off</string>
+      <string id="STR_ConfigSettingItemListView_47">Drop invalid GME</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="optionsMenu">r_config_setting_item_list_options_menu</resourceMapping>
+      <resourceMapping instanceName="ConfigSettingItemList">r_config_setting_item_list_config_setting_item_list</resourceMapping>
+      <resourceMapping instanceName="delSentMessages">r_config_setting_item_list_del_sent_messages_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="delSentMessages" rsrcId="popup">r_config_setting_item_list_del_sent_messages_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="delSentMessages" rsrcId="associated">r_config_setting_item_list_del_sent_messages</resourceMapping>
+      <resourceMapping instanceName="dropInvalidGME" rsrcId="member$setting_page_resource">r_config_setting_item_list_drop_invalidgme_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="delSentMessages" rsrcId="setting">r_config_setting_item_list_del_sent_messages_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="application_password">r_config_setting_item_list_application_password_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="menuPane1">r_config_setting_item_list_menu_pane1_menu_pane</resourceMapping>
+      <resourceMapping instanceName="title">r_config_setting_item_list_title_resource</resourceMapping>
+      <resourceMapping instanceName="application_password" rsrcId="member$setting_page_resource">r_config_setting_item_list_application_password_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="delSentMessages" rsrcId="member$setting_page_resource">r_config_setting_item_list_del_sent_messages_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="contactsPasswords" rsrcId="associated">r_config_setting_item_list_contacts_passwords</resourceMapping>
+      <resourceMapping instanceName="dropInvalidGME" rsrcId="setting">r_config_setting_item_list_drop_invalidgme_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="contactsPasswords" rsrcId="popup">r_config_setting_item_list_contacts_passwords_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_config_setting_item_list_status_pane</resourceMapping>
+      <resourceMapping instanceName="contactsPasswords" rsrcId="member$setting_page_resource">r_config_setting_item_list_contacts_passwords_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="dropInvalidGME" rsrcId="popup">r_config_setting_item_list_drop_invalidgme_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="contactsPasswords" rsrcId="setting">r_config_setting_item_list_contacts_passwords_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="dropInvalidGME">r_config_setting_item_list_drop_invalidgme_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="ConfigSettingItemListView">r_config_setting_item_list_config_setting_item_list_view</resourceMapping>
+      <resourceMapping instanceName="contactsPasswords">r_config_setting_item_list_contacts_passwords_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="dropInvalidGME" rsrcId="associated">r_config_setting_item_list_drop_invalidgme</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="ConfigSettingItemListView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EConfigSettingItemListViewId</enumMapping>
+      <enumMapping instanceName="application_password" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EEikCtSecretEd</enumMapping>
+      <enumMapping instanceName="menuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EConfigSettingItemListViewMenuItem1Command</enumMapping>
+      <enumMapping instanceName="dropInvalidGME" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">EConfigSettingItemListViewDropInvalidGME</enumMapping>
+      <enumMapping instanceName="delSentMessages" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">EConfigSettingItemListViewDelSentMessages</enumMapping>
+      <enumMapping instanceName="application_password" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">EConfigSettingItemListViewApplication_password</enumMapping>
+      <enumMapping instanceName="dropInvalidGME" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="delSentMessages" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="contactsPasswords" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="contactsPasswords" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">EConfigSettingItemListViewContactsPasswords</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/configsettingitemlistview.h</file>
+    <file>src/configsettingitemlistsettings.cpp</file>
+    <file>inc/configsettingitemlist.h</file>
+    <file>src/configsettingitemlistview.cpp</file>
+    <file>src/configsettingitemlist.cpp</file>
+    <file>inc/configsettingitemlistsettings.h</file>
+    <file>data/securesms.rss</file>
+    <file>data/configsettingitemlist.rssi</file>
+    <file>inc/securesms.hrh</file>
+    <file>data/mainlistbox.rssi</file>
+    <file>inc/mainlistbox.hrh</file>
+    <file>data/sendmessagecontainer.rssi</file>
+    <file>inc/sendmessagecontainer.hrh</file>
+    <file>data/readlistbox.rssi</file>
+    <file>inc/readlistbox.hrh</file>
+    <file>inc/configsettingitemlist.hrh</file>
+    <file>data/readmessagecontainer.rssi</file>
+    <file>data/keyexchangecontainer.rssi</file>
+    <file>inc/keyexchangecontainer.hrh</file>
+    <file>data/securesms.loc</file>
+    <file>data/securesms.l47</file>
+    <file>data/mainlistbox.loc</file>
+    <file>data/mainlistbox.l47</file>
+    <file>data/sendmessagecontainer.loc</file>
+    <file>data/sendmessagecontainer.l47</file>
+    <file>data/readlistbox.loc</file>
+    <file>data/readlistbox.l47</file>
+    <file>data/configsettingitemlist.loc</file>
+    <file>data/configsettingitemlist.l47</file>
+    <file>data/readmessagecontainer.loc</file>
+    <file>data/readmessagecontainer.l47</file>
+    <file>data/keyexchangecontainer.loc</file>
+    <file>data/keyexchangecontainer.l47</file>
+  </generatedFiles>
+</designerData>

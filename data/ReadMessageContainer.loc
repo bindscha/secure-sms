@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ReadMessageContainer.loc
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization file
+========================================================================
+*/
+#ifdef LANGUAGE_47
+#include "ReadMessageContainer.l47"
+#endif

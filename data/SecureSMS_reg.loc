@@ -1,0 +1,20 @@
+/*
+========================================================================
+ Name        : SecureSMS_reg.loc
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization file
+========================================================================
+*/
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "SecureSMS"
+
+// Short caption string for app.
+#define qtn_short_caption_string "HW"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\SecureSMS"
+
+// End of File

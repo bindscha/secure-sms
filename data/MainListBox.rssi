@@ -1,0 +1,193 @@
+/*
+========================================================================
+ Name        : MainListBox.rssi
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Resource file
+========================================================================
+*/
+#include <Securesms.mbg>
+#include "MainListBox.hrh"
+#include "MainListBox.loc"
+
+RESOURCE AVKON_VIEW r_main_list_box_main_list_box_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_main_list_box_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_main_list_box_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_main_list_box_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_main_list_box_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_main_list_box_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_main_list_box_title_resource
+	{
+	txt = STR_MainListBoxView_3;
+	}
+RESOURCE LISTBOX r_main_list_box_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE ARRAY r_main_list_box_listbox_item1
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainListBoxView_9;
+			},
+		LBUF
+			{
+			txt = STR_MainListBoxView_10;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_list_box_listbox_item2
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainListBoxView_11;
+			},
+		LBUF
+			{
+			txt = STR_MainListBoxView_12;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_list_box_listbox_item3
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainListBoxView_4;
+			},
+		LBUF
+			{
+			txt = STR_MainListBoxView_5;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_list_box_listbox_item4
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainListBoxView_6;
+			},
+		LBUF
+			{
+			txt = STR_MainListBoxView_7;
+			}
+		};
+	}
+RESOURCE DIALOG r_main_list_box_app_password
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EMainListBoxViewSecret1;
+			control = AVKON_DATA_QUERY
+				{
+				layout = ECodeLayout;
+				label = STR_MainListBoxView_8;
+				control = SECRETED
+					{
+					};
+				};
+			}
+		};
+	}
+RESOURCE DIALOG r_main_list_box_new_message
+	{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EMainListBoxViewNewMessage;
+			control = AVKON_CONFIRMATION_QUERY
+				{
+				layout = EConfirmationQueryLayout;
+				label = STR_MainListBoxView_15;
+				};
+			}
+		};
+	}
+RESOURCE MENU_PANE r_main_list_box_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EMainListBoxViewSelectMenuItemCommand;
+			txt = STR_MainListBoxView_17;
+			},
+		MENU_ITEM
+			{
+			command = EMainListBoxViewAboutMenuItemCommand;
+			txt = STR_MainListBoxView_18;
+			},
+		MENU_ITEM
+			{
+			command = EMainListBoxViewExitMenuItemCommand;
+			txt = STR_MainListBoxView_19;
+			}
+		};
+	}
+
+RESOURCE DIALOG r_main_list_box_about
+	{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE 
+			{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			itemflags = EEikDlgItemNonFocusing;
+			control = AVKON_HEADING
+				{
+				};
+			},
+		DLG_LINE
+			{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+				{
+				};
+			}
+		};
+	}
+
+RESOURCE TBUF32 r_about_dialog_title { buf=qtn_about_dialog_title; }
+RESOURCE TBUF r_about_dialog_text { buf=qtn_about_dialog_text; }

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknListBox" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ListBoxItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItemBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StandardNote" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ConfirmationQuery" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CReadListBoxView</property>
+    <compoundProperty id="location">
+      <property id="x">38</property>
+      <property id="y">10</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">ReadListBoxView</property>
+    <compoundProperty id="size">
+      <property id="width">176</property>
+      <property id="height">208</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">16</property>
+        <property id="y">1</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">152</property>
+        <property id="height">43</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">48</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_ReadListBoxView_3</property>
+        <compoundProperty id="size">
+          <property id="width">104</property>
+          <property id="height">28</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">184</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_ReadListBoxView_1</property>
+        <property id="rightText" type="i18n">STR_ReadListBoxView_2</property>
+        <property id="rightId">EAknSoftkeyBack</property>
+        <property id="type">R_AVKON_SOFTKEYS_OPTIONS_BACK</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">24</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <property id="initialFocus" type="componentRef">listBox</property>
+      <compoundProperty id="location">
+        <property id="y">44</property>
+      </compoundProperty>
+      <property id="className">CReadListBox</property>
+      <property id="name">ReadListBox</property>
+      <property id="exitsApp">false</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">140</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CAknListBox">
+        <property id="style">CAknSingleGraphicStyleListBox</property>
+        <sequenceProperty id="alignmentInfo">
+          <element>Default</element>
+          <element>Default</element>
+        </sequenceProperty>
+        <compoundProperty id="size">
+          <property id="width">176</property>
+          <property id="height">140</property>
+        </compoundProperty>
+        <compoundProperty id="location"/>
+        <compoundProperty id="markIcon"/>
+        <sequenceProperty id="extraImages"/>
+        <property id="hasSearchField">true</property>
+        <property id="name">listBox</property>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">3</property>
+          </compoundProperty>
+          <property id="name">listboxItem1</property>
+          <property id="text" type="i18n">STR_ReadListBoxView_11</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\SecureSMS.mbm</property>
+            <property id="bmpid">EMbmSecuresmsOpen_envelope_icon</property>
+            <property id="bmpmask">EMbmSecuresmsOpen_envelope_icon_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">176</property>
+            <property id="height">22</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">25</property>
+          </compoundProperty>
+          <property id="name">listboxItem2</property>
+          <property id="text" type="i18n">STR_ReadListBoxView_12</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\SecureSMS.mbm</property>
+            <property id="bmpid">EMbmSecuresmsUnopen_envelope_icon</property>
+            <property id="bmpmask">EMbmSecuresmsUnopen_envelope_icon_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">176</property>
+            <property id="height">22</property>
+          </compoundProperty>
+        </component>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">2</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size">
+        <property id="height">79</property>
+        <property id="width">172</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.MenuPane">
+        <compoundProperty id="location"/>
+        <property id="name">menuPane1</property>
+        <compoundProperty id="size">
+          <property id="height">79</property>
+          <property id="width">172</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">2</property>
+          </compoundProperty>
+          <property id="name">openMenuItem</property>
+          <property id="text" type="i18n">STR_ReadListBoxView_4</property>
+          <compoundProperty id="size">
+            <property id="width">157</property>
+            <property id="height">22</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">26</property>
+          </compoundProperty>
+          <property id="name">deleteMenuItem</property>
+          <property id="text" type="i18n">STR_ReadListBoxView_7</property>
+          <compoundProperty id="size">
+            <property id="width">157</property>
+            <property id="height">22</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">50</property>
+          </compoundProperty>
+          <property id="name">markMenuItem</property>
+          <property id="text" type="i18n">STR_ReadListBoxView_10</property>
+          <compoundProperty id="size">
+            <property id="width">157</property>
+            <property id="height">22</property>
+          </compoundProperty>
+        </component>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <property id="type">CAknWarningNote</property>
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">noMessages</property>
+      <property id="text" type="i18n">STR_ReadListBoxView_5</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">80</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.ConfirmationQuery">
+      <compoundProperty id="location">
+        <property id="x">0</property>
+        <property id="y">93</property>
+      </compoundProperty>
+      <property id="name">confDeleteMessage</property>
+      <property id="text" type="i18n">STR_ReadListBoxView_8</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">115</property>
+      </compoundProperty>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_InternationalEnglish">
+      <string id="STR_ReadListBoxView_1"/>
+      <string id="STR_ReadListBoxView_2"/>
+      <string id="STR_ReadListBoxView_3">Secure SMS</string>
+      <string id="STR_ReadListBoxView_5">There are no messages to display</string>
+      <string id="STR_ReadListBoxView_4">Open</string>
+      <string id="STR_ReadListBoxView_7">Delete</string>
+      <string id="STR_ReadListBoxView_8">Are you sure you really want to delete this message</string>
+      <string id="STR_ReadListBoxView_10">Mark/Unmark</string>
+      <string id="STR_ReadListBoxView_11">item</string>
+      <string id="STR_ReadListBoxView_12">item</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="optionsMenu">r_read_list_box_options_menu</resourceMapping>
+      <resourceMapping instanceName="title">r_read_list_box_title_resource</resourceMapping>
+      <resourceMapping instanceName="listBox">r_read_list_box_list_box</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_read_list_box_status_pane</resourceMapping>
+      <resourceMapping instanceName="ReadListBoxView">r_read_list_box_read_list_box_view</resourceMapping>
+      <resourceMapping instanceName="listboxItem1">r_read_list_box_listbox_item1</resourceMapping>
+      <resourceMapping instanceName="listboxItem2">r_read_list_box_listbox_item2</resourceMapping>
+      <resourceMapping instanceName="confDeleteMessage">r_read_list_box_conf_delete_message</resourceMapping>
+      <resourceMapping instanceName="noMessages">r_read_list_box_no_messages</resourceMapping>
+      <resourceMapping instanceName="menuPane1">r_read_list_box_menu_pane1_menu_pane</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="deleteMenuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EReadListBoxViewDeleteMenuItem1Command</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="openMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EReadListBoxViewOpenMenuItemCommand</enumMapping>
+      <enumMapping instanceName="confDeleteMessage" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EReadListBoxViewConfDeleteMessage</enumMapping>
+      <enumMapping instanceName="ReadListBoxView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EReadListBoxViewId</enumMapping>
+      <enumMapping instanceName="deleteMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EReadListBoxViewDeleteMenuItemCommand</enumMapping>
+      <enumMapping instanceName="markMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EReadListBoxViewMarkMenuItemCommand</enumMapping>
+      <enumMapping instanceName="listBox" propertyId="type">EAknListBoxSelectionList</enumMapping>
+      <enumMapping instanceName="mark_as_readMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EReadListBoxViewMark_as_readMenuItemCommand</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/readlistbox.h</file>
+    <file>inc/readlistboxview.h</file>
+    <file>src/readlistbox.cpp</file>
+    <file>src/readlistboxview.cpp</file>
+    <file>data/securesms.rss</file>
+    <file>data/readlistbox.rssi</file>
+    <file>inc/securesms.hrh</file>
+    <file>data/mainlistbox.rssi</file>
+    <file>inc/mainlistbox.hrh</file>
+    <file>data/sendmessagecontainer.rssi</file>
+    <file>inc/sendmessagecontainer.hrh</file>
+    <file>inc/readlistbox.hrh</file>
+    <file>data/configsettingitemlist.rssi</file>
+    <file>inc/configsettingitemlist.hrh</file>
+    <file>data/readmessagecontainer.rssi</file>
+    <file>data/keyexchangecontainer.rssi</file>
+    <file>inc/keyexchangecontainer.hrh</file>
+    <file>data/securesms.loc</file>
+    <file>data/securesms.l47</file>
+    <file>data/mainlistbox.loc</file>
+    <file>data/mainlistbox.l47</file>
+    <file>data/sendmessagecontainer.loc</file>
+    <file>data/sendmessagecontainer.l47</file>
+    <file>data/readlistbox.loc</file>
+    <file>data/readlistbox.l47</file>
+    <file>data/configsettingitemlist.loc</file>
+    <file>data/configsettingitemlist.l47</file>
+    <file>data/readmessagecontainer.loc</file>
+    <file>data/readmessagecontainer.l47</file>
+    <file>data/keyexchangecontainer.loc</file>
+    <file>data/keyexchangecontainer.l47</file>
+  </generatedFiles>
+</designerData>

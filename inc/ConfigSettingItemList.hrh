@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : ConfigSettingItemList.hrh
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Header file for settings commands and items
+========================================================================
+*/
+enum TConfigSettingItemListViewCommands
+	{
+	EConfigSettingItemListViewMenuItem1Command = 0x6000
+	};
+enum TConfigSettingItemListViewItems
+	{
+	EConfigSettingItemListViewApplication_password = 1,
+	EConfigSettingItemListViewContactsPasswords,
+	EConfigSettingItemListViewDelSentMessages,
+	EConfigSettingItemListViewDropInvalidGME
+	};

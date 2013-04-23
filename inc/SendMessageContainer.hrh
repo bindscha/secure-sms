@@ -1,0 +1,13 @@
+/*
+========================================================================
+ Name        : SendMessageContainer.hrh
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Header file for send message container controls
+========================================================================
+*/
+enum TSendMessageContainerViewControls
+	{
+	ESendMessageContainerViewPassword_storing = 1,
+	ESendMessageContainerViewSecret1
+	};

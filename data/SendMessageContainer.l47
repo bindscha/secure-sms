@@ -1,0 +1,23 @@
+/*
+========================================================================
+ Name        : SendMessageContainer.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_SendMessageContainerView_1 ""
+#define STR_SendMessageContainerView_2 ""
+#define STR_SendMessageContainerView_3 "SecureSMS"
+#define STR_SendMessageContainerView_4 ""
+#define STR_SendMessageContainerView_5 "Message:"
+#define STR_SendMessageContainerView_6 "To:"
+#define STR_SendMessageContainerView_9 ""
+#define STR_SendMessageContainerView_8 "Would you like the password for this contact to be stored on the mobile phone"
+#define STR_SendMessageContainerView_29 "The message was sent successfully"
+#define STR_SendMessageContainerView_32 "Failed to send the message. Please try again."
+#define STR_SendMessageContainerView_21 "The application password must be set in order for password storing to work"
+#define STR_SendMessageContainerView_13 "The password for this contact has been stored successfully"
+#define STR_SendMessageContainerView_14 "Enter password:"
+#define STR_SendMessageContainerView_27 "Password storing failed. Please try again."

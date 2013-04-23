@@ -1,0 +1,30 @@
+/*
+========================================================================
+ Name        : MainListBox.l47
+ Author      : Laurent Bindschaedler
+ Copyright   : Copyright (c) Laurent Bindschaedler 2009
+ Description : Localization strings
+========================================================================
+*/
+// localized strings for language: International English (47)
+#define STR_MainListBoxView_1 ""
+#define STR_MainListBoxView_2 ""
+#define STR_MainListBoxView_3 "Secure SMS"
+#define STR_MainListBoxView_9 "Send"
+#define STR_MainListBoxView_10 "Send secure SMS"
+#define STR_MainListBoxView_11 "Read"
+#define STR_MainListBoxView_12 "Read secure SMS"
+#define STR_MainListBoxView_4 "Key Exchange"
+#define STR_MainListBoxView_5 "Perform a key exchange"
+#define STR_MainListBoxView_6 "Settings"
+#define STR_MainListBoxView_7 "Edit settings"
+#define STR_MainListBoxView_8 "Enter application password:"
+#define STR_MainListBoxView_15 "New message received! Would you like to see it now"
+#define STR_MainListBoxView_17 "Select"
+#define STR_MainListBoxView_18 "About"
+#define STR_MainListBoxView_19 "Exit"
+#define STR_MainListBoxView_23 "About"
+
+#define qtn_about_dialog_title "About"
+
+#define qtn_about_dialog_text "Secure SMS Version 1.0.0\n\nAuthors: Laurent Bindschaedler, Marc Bailly\n\nCopyright (c) EPFL LCA1 2009"

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikRichText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikGlobalText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikEdwinBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.EditorBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikLabel" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ConfirmationQuery" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SingleLineDataQuery" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SingleLineDataQueryBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SecretEditor" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StandardNote" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CSendMessageContainerView</property>
+    <compoundProperty id="location">
+      <property id="x">38</property>
+      <property id="y">10</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">SendMessageContainerView</property>
+    <compoundProperty id="size">
+      <property id="width">176</property>
+      <property id="height">208</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">16</property>
+        <property id="y">1</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">152</property>
+        <property id="height">43</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">48</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_SendMessageContainerView_3</property>
+        <compoundProperty id="size">
+          <property id="width">104</property>
+          <property id="height">28</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">184</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_SendMessageContainerView_1</property>
+        <property id="rightText" type="i18n">STR_SendMessageContainerView_2</property>
+        <property id="leftId">EAknSoftkeyDone</property>
+        <property id="rightId">EAknSoftkeyBack</property>
+        <property id="type">R_AVKON_SOFTKEYS_DONE_BACK</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">24</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <property id="initialFocus" type="componentRef">to</property>
+      <compoundProperty id="location">
+        <property id="y">44</property>
+      </compoundProperty>
+      <property id="className">CSendMessageContainer</property>
+      <property id="name">SendMessageContainer</property>
+      <property id="exitsApp">false</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">140</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CEikRichText">
+        <compoundProperty id="size">
+          <property id="width">146</property>
+          <property id="height">20</property>
+        </compoundProperty>
+        <compoundProperty id="avkonFlags"/>
+        <compoundProperty id="location">
+          <property id="x">30</property>
+          <property id="y">0</property>
+        </compoundProperty>
+        <compoundProperty id="flags"/>
+        <compoundProperty id="allowedCaseModes"/>
+        <property id="name">to</property>
+        <property id="defaultInputMode">EAknEditorNumericInputMode</property>
+        <property id="text" type="i18n">STR_SendMessageContainerView_4</property>
+        <compoundProperty id="charFormat"/>
+        <compoundProperty id="allowedInputModes">
+          <property id="EAknEditorFullWidthNumericInputMode">true</property>
+          <property id="EAknEditorSecretAlphaInputMode">false</property>
+          <property id="EAknEditorTextInputMode">false</property>
+          <property id="EAknEditorNumericInputMode">true</property>
+          <property id="EAknEditorHiraganaInputMode">false</property>
+          <property id="EAknEditorKatakanaInputMode">false</property>
+          <property id="EAknEditorHiraganaKanjiInputMode">false</property>
+          <property id="EAknEditorHalfWidthTextInputMode">false</property>
+          <property id="EAknEditorFullWidthKatakanaInputMode">false</property>
+          <property id="EAknEditorFullWidthTextInputMode">false</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CEikLabel">
+        <compoundProperty id="location">
+          <property id="y">20</property>
+          <property id="x">0</property>
+        </compoundProperty>
+        <property id="name">labelMessage</property>
+        <property id="text" type="i18n">STR_SendMessageContainerView_5</property>
+        <property id="alignment">EEikLabelAlignHLeft</property>
+        <compoundProperty id="size">
+          <property id="width">60</property>
+          <property id="height">20</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CEikLabel">
+        <compoundProperty id="location"/>
+        <property id="name">labelTo</property>
+        <property id="text" type="i18n">STR_SendMessageContainerView_6</property>
+        <property id="alignment">EEikLabelAlignHLeft</property>
+        <compoundProperty id="size">
+          <property id="width">30</property>
+          <property id="height">20</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CEikRichText">
+        <compoundProperty id="size">
+          <property id="width">176</property>
+          <property id="height">100</property>
+        </compoundProperty>
+        <compoundProperty id="avkonFlags"/>
+        <compoundProperty id="location">
+          <property id="y">40</property>
+          <property id="x">0</property>
+        </compoundProperty>
+        <compoundProperty id="flags"/>
+        <compoundProperty id="allowedCaseModes"/>
+        <property id="name">message</property>
+        <property id="text" type="i18n">STR_SendMessageContainerView_9</property>
+        <compoundProperty id="charFormat"/>
+        <compoundProperty id="allowedInputModes">
+          <property id="EAknEditorKatakanaInputMode">true</property>
+          <property id="EAknEditorFullWidthTextInputMode">true</property>
+          <property id="EAknEditorFullWidthNumericInputMode">true</property>
+          <property id="EAknEditorFullWidthKatakanaInputMode">true</property>
+          <property id="EAknEditorHiraganaKanjiInputMode">true</property>
+          <property id="EAknEditorHalfWidthTextInputMode">true</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">88</property>
+        <property id="y">184</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size"/>
+    </component>
+    <component id="com.nokia.sdt.series60.ConfirmationQuery">
+      <compoundProperty id="location">
+        <property id="x">0</property>
+        <property id="y">75</property>
+      </compoundProperty>
+      <property id="name">password_storing</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_8</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">133</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.SingleLineDataQuery">
+      <property id="type">ECodeLayout</property>
+      <compoundProperty id="location">
+        <property id="y">121</property>
+      </compoundProperty>
+      <property id="name">password</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_14</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">87</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.SecretEditor">
+        <compoundProperty id="location">
+          <property id="x">13</property>
+          <property id="y">27</property>
+        </compoundProperty>
+        <property id="name">secret1</property>
+        <compoundProperty id="size">
+          <property id="width">150</property>
+          <property id="height">23</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">93</property>
+      </compoundProperty>
+      <property id="name">password_storing_success</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_13</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">92</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <property id="type">CAknWarningNote</property>
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">password_storing_failed</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_27</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">80</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <property id="type">CAknWarningNote</property>
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">75</property>
+      </compoundProperty>
+      <property id="name">password_not_set</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_21</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">110</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">message_sent</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_29</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">80</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <property id="type">CAknWarningNote</property>
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">message_failed</property>
+      <property id="text" type="i18n">STR_SendMessageContainerView_32</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">80</property>
+      </compoundProperty>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_InternationalEnglish">
+      <string id="STR_SendMessageContainerView_1"/>
+      <string id="STR_SendMessageContainerView_2"/>
+      <string id="STR_SendMessageContainerView_3">SecureSMS</string>
+      <string id="STR_SendMessageContainerView_4"/>
+      <string id="STR_SendMessageContainerView_5">Message:</string>
+      <string id="STR_SendMessageContainerView_6">To:</string>
+      <string id="STR_SendMessageContainerView_9"/>
+      <string id="STR_SendMessageContainerView_8">Would you like the password for this contact to be stored on the mobile phone</string>
+      <string id="STR_SendMessageContainerView_13">The password for this contact has been stored successfully</string>
+      <string id="STR_SendMessageContainerView_14">Enter password:</string>
+      <string id="STR_SendMessageContainerView_21">The application password must be set in order for password storing to work</string>
+      <string id="STR_SendMessageContainerView_27">Password storing failed. Please try again.</string>
+      <string id="STR_SendMessageContainerView_29">The message was sent successfully</string>
+      <string id="STR_SendMessageContainerView_32">Failed to send the message. Please try again.</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="password_storing">r_send_message_container_password_storing</resourceMapping>
+      <resourceMapping instanceName="SendMessageContainerView">r_send_message_container_send_message_container_view</resourceMapping>
+      <resourceMapping instanceName="password_storing_failed">r_send_message_container_password_storing_failed</resourceMapping>
+      <resourceMapping instanceName="message" rsrcId="text">r_send_message_container_message_2</resourceMapping>
+      <resourceMapping instanceName="title">r_send_message_container_title_resource</resourceMapping>
+      <resourceMapping instanceName="message_failed">r_send_message_container_message_failed</resourceMapping>
+      <resourceMapping instanceName="to">r_send_message_container_to</resourceMapping>
+      <resourceMapping instanceName="message_sent">r_send_message_container_message_sent</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_send_message_container_status_pane</resourceMapping>
+      <resourceMapping instanceName="message">r_send_message_container_message</resourceMapping>
+      <resourceMapping instanceName="password_not_set">r_send_message_container_password_not_set</resourceMapping>
+      <resourceMapping instanceName="labelTo">r_send_message_container_label_to</resourceMapping>
+      <resourceMapping instanceName="to" rsrcId="text">r_send_message_container_to_2</resourceMapping>
+      <resourceMapping instanceName="password_storing_success">r_send_message_container_password_storing_success</resourceMapping>
+      <resourceMapping instanceName="password">r_send_message_container_password</resourceMapping>
+      <resourceMapping instanceName="labelMessage">r_send_message_container_label_message</resourceMapping>
+      <resourceMapping instanceName="optionsMenu">r_send_message_container_options_menu</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="password" propertyId="[parent].type">ECodeLayout</enumMapping>
+      <enumMapping instanceName="to" propertyId="numericKeymap">EAknEditorStandardNumberModeKeymap</enumMapping>
+      <enumMapping instanceName="labelTo" propertyId="alignment">EEikLabelAlignHLeft</enumMapping>
+      <enumMapping instanceName="to" propertyId="defaultInputMode">EAknEditorNumericInputMode</enumMapping>
+      <enumMapping instanceName="password_storing" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">ESendMessageContainerViewPassword_storing</enumMapping>
+      <enumMapping instanceName="labelTo" propertyId="font">EEikLabelFontNormal</enumMapping>
+      <enumMapping instanceName="message" propertyId="defaultInputMode">EAknEditorTextInputMode</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="to" propertyId="defaultCase">EAknEditorTextCase</enumMapping>
+      <enumMapping instanceName="secret1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">ESendMessageContainerViewSecret1</enumMapping>
+      <enumMapping instanceName="labelMessage" propertyId="alignment">EEikLabelAlignHLeft</enumMapping>
+      <enumMapping instanceName="message" propertyId="numericKeymap">EAknEditorStandardNumberModeKeymap</enumMapping>
+      <enumMapping instanceName="SendMessageContainerView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESendMessageContainerViewId</enumMapping>
+      <enumMapping instanceName="message" propertyId="defaultCase">EAknEditorTextCase</enumMapping>
+      <enumMapping instanceName="labelMessage" propertyId="font">EEikLabelFontNormal</enumMapping>
+    </enumMappings>
+    <arrayMappings>
+      <arrayMapping instanceName="password" propertyId="." memberId="items">
+        <arrayElement uniqueValue="ESendMessageContainerViewSecret1">secret1</arrayElement>
+      </arrayMapping>
+    </arrayMappings>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/sendmessagecontainer.h</file>
+    <file>src/sendmessagecontainer.cpp</file>
+    <file>inc/sendmessagecontainerview.h</file>
+    <file>src/sendmessagecontainerview.cpp</file>
+    <file>data/securesms.rss</file>
+    <file>data/sendmessagecontainer.rssi</file>
+    <file>inc/securesms.hrh</file>
+    <file>data/mainlistbox.rssi</file>
+    <file>inc/mainlistbox.hrh</file>
+    <file>inc/sendmessagecontainer.hrh</file>
+    <file>data/readlistbox.rssi</file>
+    <file>data/configsettingitemlist.rssi</file>
+    <file>inc/configsettingitemlist.hrh</file>
+    <file>data/readmessagecontainer.rssi</file>
+    <file>data/keyexchangecontainer.rssi</file>
+    <file>inc/keyexchangecontainer.hrh</file>
+    <file>data/securesms.loc</file>
+    <file>data/securesms.l47</file>
+    <file>data/mainlistbox.loc</file>
+    <file>data/mainlistbox.l47</file>
+    <file>data/sendmessagecontainer.loc</file>
+    <file>data/sendmessagecontainer.l47</file>
+    <file>data/readlistbox.loc</file>
+    <file>data/readlistbox.l47</file>
+    <file>data/configsettingitemlist.loc</file>
+    <file>data/configsettingitemlist.l47</file>
+    <file>data/readmessagecontainer.loc</file>
+    <file>data/readmessagecontainer.l47</file>
+    <file>data/keyexchangecontainer.loc</file>
+    <file>data/keyexchangecontainer.l47</file>
+  </generatedFiles>
+</designerData>

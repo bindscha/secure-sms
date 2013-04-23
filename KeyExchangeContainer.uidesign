@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikRichText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikGlobalText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikEdwinBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.EditorBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ConfirmationQuery" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknListQueryDialog" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.WaitDialog" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StandardNote" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SingleLineDataQuery" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SingleLineDataQueryBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikEdwin" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ListBoxItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.SecretEditor" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CKeyExchangeContainerView</property>
+    <compoundProperty id="location">
+      <property id="x">38</property>
+      <property id="y">10</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">KeyExchangeContainerView</property>
+    <compoundProperty id="size">
+      <property id="width">176</property>
+      <property id="height">208</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">16</property>
+        <property id="y">1</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">152</property>
+        <property id="height">43</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">48</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_KeyExchangeContainerView_3</property>
+        <compoundProperty id="size">
+          <property id="width">104</property>
+          <property id="height">28</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">184</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_KeyExchangeContainerView_1</property>
+        <property id="rightText" type="i18n">STR_KeyExchangeContainerView_2</property>
+        <property id="rightId">EAknSoftkeyBack</property>
+        <property id="type">R_AVKON_SOFTKEYS_OPTIONS_BACK</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">24</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <property id="initialFocus" type="componentRef">log</property>
+      <compoundProperty id="location">
+        <property id="y">44</property>
+      </compoundProperty>
+      <property id="className">CKeyExchangeContainer</property>
+      <property id="name">KeyExchangeContainer</property>
+      <property id="exitsApp">false</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">140</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CEikRichText">
+        <compoundProperty id="size">
+          <property id="width">176</property>
+          <property id="height">140</property>
+        </compoundProperty>
+        <compoundProperty id="avkonFlags"/>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">0</property>
+        </compoundProperty>
+        <compoundProperty id="flags">
+          <property id="EEikEdwinAvkonDisableCursor">true</property>
+          <property id="EEikEdwinKeepDocument">false</property>
+          <property id="EEikEdwinSegmentedStorage">false</property>
+          <property id="EEikEdwinNoAutoSelection">true</property>
+          <property id="EEikEdwinJustAutoCurEnd">true</property>
+          <property id="EEikEdwinNoWrap">false</property>
+          <property id="EEikEdwinLineCursor">false</property>
+          <property id="EEikEdwinNoHorizScrolling">false</property>
+          <property id="EEikEdwinInclusiveSizeFixed">false</property>
+          <property id="EEikEdwinDisplayOnly">true</property>
+          <property id="EEikEdwinAlwaysShowSelection">false</property>
+          <property id="EEikEdwinReadOnly">false</property>
+          <property id="EEikEdwinAllowPictures">false</property>
+          <property id="EEikEdwinAllowUndo">false</property>
+          <property id="EEikEdwinNoLineOrParaBreaks">false</property>
+          <property id="EEikEdwinOnlyASCIIChars">false</property>
+          <property id="EEikEdwinIgnoreVirtualCursor">false</property>
+          <property id="EEikEdwinAlternativeWrapping">false</property>
+          <property id="EEikEdwinResizable">true</property>
+        </compoundProperty>
+        <compoundProperty id="allowedCaseModes"/>
+        <property id="name">log</property>
+        <property id="text" type="i18n">STR_KeyExchangeContainerView_6</property>
+        <compoundProperty id="charFormat"/>
+        <compoundProperty id="allowedInputModes">
+          <property id="EAknEditorKatakanaInputMode">true</property>
+          <property id="EAknEditorFullWidthTextInputMode">true</property>
+          <property id="EAknEditorFullWidthNumericInputMode">true</property>
+          <property id="EAknEditorFullWidthKatakanaInputMode">true</property>
+          <property id="EAknEditorHiraganaKanjiInputMode">true</property>
+          <property id="EAknEditorHalfWidthTextInputMode">true</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">88</property>
+        <property id="y">184</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size"/>
+    </component>
+    <component id="com.nokia.sdt.series60.ConfirmationQuery">
+      <compoundProperty id="location">
+        <property id="x">0</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">initiateQuery</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_4</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">103</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.ConfirmationQuery">
+      <compoundProperty id="location">
+        <property id="x">0</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">keyExchangeType</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_8</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">103</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CAknListQueryDialog">
+      <sequenceProperty id="extraImages"/>
+      <compoundProperty id="location">
+        <property id="y">81</property>
+      </compoundProperty>
+      <property id="name">keyExchangeDevSelection</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_5</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">127</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.WaitDialog">
+      <compoundProperty id="location">
+        <property id="x">0</property>
+        <property id="y">105</property>
+      </compoundProperty>
+      <property id="name">waitPartner</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_9</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">103</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <compoundProperty id="location">
+        <property id="x">4</property>
+        <property id="y">75</property>
+      </compoundProperty>
+      <property id="name">hostingKeyExchange</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_12</property>
+      <compoundProperty id="size">
+        <property id="width">171</property>
+        <property id="height">110</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.SingleLineDataQuery">
+      <property id="type">EPhoneLayout</property>
+      <compoundProperty id="location">
+        <property id="y">103</property>
+      </compoundProperty>
+      <property id="name">askPhoneNb</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_7</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">105</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CEikEdwin">
+        <compoundProperty id="size">
+          <property id="width">150</property>
+          <property id="height">23</property>
+        </compoundProperty>
+        <compoundProperty id="avkonFlags"/>
+        <compoundProperty id="location">
+          <property id="x">13</property>
+          <property id="y">45</property>
+        </compoundProperty>
+        <compoundProperty id="flags"/>
+        <compoundProperty id="allowedCaseModes"/>
+        <property id="name">edit1</property>
+        <property id="text" type="i18n">STR_KeyExchangeContainerView_10</property>
+        <compoundProperty id="allowedInputModes">
+          <property id="EAknEditorKatakanaInputMode">true</property>
+          <property id="EAknEditorFullWidthTextInputMode">true</property>
+          <property id="EAknEditorFullWidthNumericInputMode">true</property>
+          <property id="EAknEditorFullWidthKatakanaInputMode">true</property>
+          <property id="EAknEditorHiraganaKanjiInputMode">true</property>
+          <property id="EAknEditorHalfWidthTextInputMode">true</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CAknListQueryDialog">
+      <sequenceProperty id="extraImages"/>
+      <compoundProperty id="location">
+        <property id="y">114</property>
+      </compoundProperty>
+      <property id="name">keyExchangeOver</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_11</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">94</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.ListBoxItem">
+        <compoundProperty id="location"/>
+        <property id="name">listboxItem1</property>
+        <property id="text" type="i18n">STR_KeyExchangeContainerView_13</property>
+        <compoundProperty id="size">
+          <property id="width">164</property>
+          <property id="height">22</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.ListBoxItem">
+        <compoundProperty id="location">
+          <property id="y">22</property>
+        </compoundProperty>
+        <property id="name">listboxItem2</property>
+        <property id="text" type="i18n">STR_KeyExchangeContainerView_14</property>
+        <compoundProperty id="size">
+          <property id="width">164</property>
+          <property id="height">22</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.SingleLineDataQuery">
+      <property id="type">ECodeLayout</property>
+      <compoundProperty id="location">
+        <property id="y">85</property>
+      </compoundProperty>
+      <property id="name">passwordQuery</property>
+      <property id="text" type="i18n">STR_KeyExchangeContainerView_15</property>
+      <compoundProperty id="size">
+        <property id="width">176</property>
+        <property id="height">123</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.SecretEditor">
+        <compoundProperty id="location">
+          <property id="x">13</property>
+          <property id="y">63</property>
+        </compoundProperty>
+        <property id="name">secret1</property>
+        <compoundProperty id="size">
+          <property id="width">150</property>
+          <property id="height">23</property>
+        </compoundProperty>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_InternationalEnglish">
+      <string id="STR_KeyExchangeContainerView_1"/>
+      <string id="STR_KeyExchangeContainerView_2"/>
+      <string id="STR_KeyExchangeContainerView_3">Secure SMS</string>
+      <string id="STR_KeyExchangeContainerView_4">Start key exchange now</string>
+      <string id="STR_KeyExchangeContainerView_8">Do you wish to host the key exchange</string>
+      <string id="STR_KeyExchangeContainerView_5">Select a partner for key exchange</string>
+      <string id="STR_KeyExchangeContainerView_9">Attempting to locate a key exchange partner...</string>
+      <string id="STR_KeyExchangeContainerView_12">You are now hosting the key exchange. Please make sure your partner selects your device when prompted to</string>
+      <string id="STR_KeyExchangeContainerView_6"/>
+      <string id="STR_KeyExchangeContainerView_7">Enter partner phone number:</string>
+      <string id="STR_KeyExchangeContainerView_10"/>
+      <string id="STR_KeyExchangeContainerView_11">Perform Key Exchange over...</string>
+      <string id="STR_KeyExchangeContainerView_13">SMS</string>
+      <string id="STR_KeyExchangeContainerView_14">Bluetooth</string>
+      <string id="STR_KeyExchangeContainerView_15">Please consult with your partner to decide on a password and enter it:</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="askPhoneNb">r_key_exchange_container_ask_phone_nb</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_key_exchange_container_status_pane</resourceMapping>
+      <resourceMapping instanceName="log">r_key_exchange_container_log</resourceMapping>
+      <resourceMapping instanceName="listboxItem2">r_key_exchange_container_listbox_item2</resourceMapping>
+      <resourceMapping instanceName="KeyExchangeContainerView">r_key_exchange_container_key_exchange_container_view</resourceMapping>
+      <resourceMapping instanceName="initiateQuery">r_key_exchange_container_initiate_query</resourceMapping>
+      <resourceMapping instanceName="log" rsrcId="text">r_key_exchange_container_log_2</resourceMapping>
+      <resourceMapping instanceName="keyExchangeDevSelection">r_key_exchange_container_key_exchange_dev_selection</resourceMapping>
+      <resourceMapping instanceName="keyExchangeType">r_key_exchange_container_key_exchange_type</resourceMapping>
+      <resourceMapping instanceName="edit1" rsrcId="text">r_key_exchange_container_edit1</resourceMapping>
+      <resourceMapping instanceName="waitPartner">r_key_exchange_container_wait_partner</resourceMapping>
+      <resourceMapping instanceName="hostingKeyExchange">r_key_exchange_container_hosting_key_exchange</resourceMapping>
+      <resourceMapping instanceName="title">r_key_exchange_container_title_resource</resourceMapping>
+      <resourceMapping instanceName="optionsMenu">r_key_exchange_container_options_menu</resourceMapping>
+      <resourceMapping instanceName="keyExchangeOver">r_key_exchange_container_key_exchange_over</resourceMapping>
+      <resourceMapping instanceName="listboxItem1">r_key_exchange_container_listbox_item1</resourceMapping>
+      <resourceMapping instanceName="passwordQuery">r_key_exchange_container_password_query</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="initiateQuery" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EKeyExchangeContainerViewInitiateQuery</enumMapping>
+      <enumMapping instanceName="passwordQuery" propertyId="[parent].type">ECodeLayout</enumMapping>
+      <enumMapping instanceName="waitPartner" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EKeyExchangeContainerViewWaitPartner</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="log" propertyId="numericKeymap">EAknEditorStandardNumberModeKeymap</enumMapping>
+      <enumMapping instanceName="edit1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EKeyExchangeContainerViewEdit1</enumMapping>
+      <enumMapping instanceName="keyExchangeType" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EKeyExchangeContainerViewKeyExchangeType</enumMapping>
+      <enumMapping instanceName="log" propertyId="defaultInputMode">EAknEditorTextInputMode</enumMapping>
+      <enumMapping instanceName="edit1" propertyId="numericKeymap">EAknEditorStandardNumberModeKeymap</enumMapping>
+      <enumMapping instanceName="log" propertyId="defaultCase">EAknEditorTextCase</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="KeyExchangeContainerView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EKeyExchangeContainerViewId</enumMapping>
+      <enumMapping instanceName="askPhoneNb" propertyId="[parent].type">EPhoneLayout</enumMapping>
+      <enumMapping instanceName="secret1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_DIALOG_LINE_ID">EKeyExchangeContainerViewSecret1</enumMapping>
+      <enumMapping instanceName="edit1" propertyId="defaultInputMode">EAknEditorTextInputMode</enumMapping>
+      <enumMapping instanceName="keyExchangeOver" propertyId="style">EAknCtSinglePopupMenuListBox</enumMapping>
+      <enumMapping instanceName="edit1" propertyId="defaultCase">EAknEditorTextCase</enumMapping>
+      <enumMapping instanceName="keyExchangeDevSelection" propertyId="style">EAknCtSinglePopupMenuListBox</enumMapping>
+    </enumMappings>
+    <arrayMappings>
+      <arrayMapping instanceName="askPhoneNb" propertyId="." memberId="items">
+        <arrayElement uniqueValue="EKeyExchangeContainerViewEdit1">edit1</arrayElement>
+      </arrayMapping>
+      <arrayMapping instanceName="passwordQuery" propertyId="." memberId="items">
+        <arrayElement uniqueValue="EKeyExchangeContainerViewSecret1">secret1</arrayElement>
+      </arrayMapping>
+    </arrayMappings>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/keyexchangecontainer.cpp</file>
+    <file>inc/keyexchangecontainer.h</file>
+    <file>src/keyexchangecontainerview.cpp</file>
+    <file>inc/keyexchangecontainerview.h</file>
+    <file>data/securesms.rss</file>
+    <file>data/keyexchangecontainer.rssi</file>
+    <file>inc/securesms.hrh</file>
+    <file>data/mainlistbox.rssi</file>
+    <file>inc/mainlistbox.hrh</file>
+    <file>data/sendmessagecontainer.rssi</file>
+    <file>inc/sendmessagecontainer.hrh</file>
+    <file>data/readlistbox.rssi</file>
+    <file>inc/readlistbox.hrh</file>
+    <file>data/configsettingitemlist.rssi</file>
+    <file>inc/configsettingitemlist.hrh</file>
+    <file>data/readmessagecontainer.rssi</file>
+    <file>inc/keyexchangecontainer.hrh</file>
+    <file>data/securesms.loc</file>
+    <file>data/securesms.l47</file>
+    <file>data/mainlistbox.loc</file>
+    <file>data/mainlistbox.l47</file>
+    <file>data/sendmessagecontainer.loc</file>
+    <file>data/sendmessagecontainer.l47</file>
+    <file>data/readlistbox.loc</file>
+    <file>data/readlistbox.l47</file>
+    <file>data/configsettingitemlist.loc</file>
+    <file>data/configsettingitemlist.l47</file>
+    <file>data/readmessagecontainer.loc</file>
+    <file>data/readmessagecontainer.l47</file>
+    <file>data/keyexchangecontainer.loc</file>
+    <file>data/keyexchangecontainer.l47</file>
+  </generatedFiles>
+</designerData>
